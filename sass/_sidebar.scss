@@ -1,5 +1,26 @@
-.sidebar{
-    grid-column: sidebar-start / sidebar-end;
-    grid-row: 1/-1;
-    background-color: $color-primary;
+.sidebar {
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1/-1;
+  background-color: $color-primary;
+  display: flex;
+  justify-content: center;
+}
+.nav__btn {
+  border: none;
+  border-radius: none;
+  width: 4.5rem;
+  height: .2rem;
+  background-color: #fff;
+  margin-top: 4rem;
+  transition: all 0.2s;
+  &::before,
+  &::after{
+    width: 4.5rem;
+    height: .2rem;
+    background-color: #fff;
+    content: "";
+    display: block;
+  }
+  &::before{transform: translateY(-1.5rem);}
+  &::after{transform: translateY(1.5rem);}
 }
